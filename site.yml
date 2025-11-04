@@ -5,12 +5,12 @@
   connection: local
 
   vars:
-    ansible_python_interpreter: /usr/bin/python3.11 
+    ansible_python_interpreter: /usr/bin/python3
 
   tasks:
 # 👇 Task 목록도 대시(-)로 시작해야 합니다.
     - name: Create a test file in the home directory
       ansible.builtin.file:
-        path: ./ansible_test_ok.txt 
+        path: ~/ansible_test_ok.txt
         state: touch
         mode: '0644'
